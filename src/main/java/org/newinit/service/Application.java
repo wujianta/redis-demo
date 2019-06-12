@@ -13,6 +13,7 @@ public class Application {
     @Autowired
     private RedisTemplate redisTemplate;
 
+    
     @PostConstruct
     public void init(){
         RedisSerializer stringSerializer = redisTemplate.getStringSerializer();
